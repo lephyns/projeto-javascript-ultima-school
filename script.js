@@ -23,6 +23,7 @@ function exibirFrutasWhile() {
 
 }
 
+
 function exibirFrutasDoWhile() {
 
     const cars = [

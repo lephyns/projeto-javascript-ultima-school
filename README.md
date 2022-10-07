@@ -4,6 +4,7 @@ Este projeto foi criado para o curso QA Engineer - Analista de softwares da Ulti
 Nele foi utilizado as linguagens HTML5 e JavaScript.<br>
 
 
+
 ## Observações
 
 Ainda não foi implementado a responsividade neste projeto.<br>
