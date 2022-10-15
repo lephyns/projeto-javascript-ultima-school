@@ -1,21 +1,22 @@
-function exibirFrutasWhile() {
+const frutas = [
+    "Banana",
+    "Maça",
+    "Uva",
+    "Laranja",
+    "Abacaxi",
+    "Pêssego",
+    "Morango",
+    "Goiaba",
+    "Manga",
+    "Kiwi",
+];
 
-    const cars = [
-        "Banana",
-        "Maça",
-        "Uva",
-        "Laranja",
-        "Abacaxi",
-        "Pêssego",
-        "Morango",
-        "Goiaba",
-        "Manga",
-        "Kiwi",];
+function exibirFrutasWhile() {
 
     let i = 0;
     let text = "";
-    while (cars[i]) {
-        text += cars[i] + "<br>";
+    while (frutas[i]) {
+        text += frutas[i] + "<br>";
         i++;
     }
 
@@ -23,25 +24,12 @@ function exibirFrutasWhile() {
 
 }
 
-
 function exibirFrutasDoWhile() {
-
-    const cars = [
-        "Banana",
-        "Maça",
-        "Uva",
-        "Laranja",
-        "Abacaxi",
-        "Pêssego",
-        "Morango",
-        "Goiaba",
-        "Manga",
-        "Kiwi",];
 
     let text = "";
     let i = 0;
     do {
-        text += cars[i] + "<br>";
+        text += frutas[i] + "<br>";
         i++;
     }
     while (i < 10);
@@ -50,22 +38,10 @@ function exibirFrutasDoWhile() {
 
 function exibirFrutasFor() {
 
-    const cars = [
-        "Banana",
-        "Maça",
-        "Uva",
-        "Laranja",
-        "Abacaxi",
-        "Pêssego",
-        "Morango",
-        "Goiaba",
-        "Manga",
-        "Kiwi",];
-
     let i = 0;
     let text = "";
-    for (; cars[i];) {
-        text += cars[i] + "<br>";
+    for (; frutas[i];) {
+        text += frutas[i] + "<br>";
         i++;
     }
 
@@ -74,20 +50,8 @@ function exibirFrutasFor() {
 
 function exibirFrutasForEach() {
 
-    const cars = [
-        "Banana",
-        "Maça",
-        "Uva",
-        "Laranja",
-        "Abacaxi",
-        "Pêssego",
-        "Morango",
-        "Goiaba",
-        "Manga",
-        "Kiwi",];
-
     let text = "";
-    cars.forEach(myFunction);
+    frutas.forEach(myFunction);
 
     document.getElementById("exibirFrutasForEach").innerHTML = text;
 
@@ -96,8 +60,6 @@ function exibirFrutasForEach() {
     }
 
 }
-
-// -----------------------------------------------------------------
 
 function tabuada() {
     var num = parseInt(document.getElementById("num").value);
@@ -111,12 +73,34 @@ function tabuada() {
     resposta.innerHTML = tabuada;
 }
 
-// Crie um array com 5 números reais e para cada elemento utilize funções matemáticas para exibir respectivamente:
-// O quadrado
-// A raiz quadrada
-// Apenas a parte inteira
-// O número arredondado para baixo
-// O número arredondado para cima
-// Resultado:
+const numeroReal = [2, 4, 5, 7, 9];
 
-// Arquivo em formato .js com essas respostas
+function quadrado () {
+    document.getElementById("exibirQuadrado").innerHTML = Math.pow(numeroReal[1], 2);
+}
+
+function raizQuadrada () {
+
+document.getElementById("exibirRaizQuadrada").innerHTML = Math.sqrt(numeroReal[4]);
+
+}
+
+function inteiro () {
+
+    var num1 = numeroReal[4];
+    var num2 = numeroReal[0];
+    document.getElementById("exibirInteiro").innerHTML = Math.trunc(num1 / num2);
+
+}
+
+function arredondaParaCima () {
+    var num1 = numeroReal[2];
+    var num2 = numeroReal[0];
+    document.getElementById("exibirArredondaParaCima").innerHTML = Math.round(num1 / num2);
+}
+
+function arredondaParaBaixo () {
+    var num1 = numeroReal[4];
+    var num2 = numeroReal[3];
+    document.getElementById("exibirArredondaParaBaixo").innerHTML = Math.round(num1 / num2);
+}

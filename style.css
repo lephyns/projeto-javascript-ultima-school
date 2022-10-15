@@ -1,0 +1,27 @@
+* {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.principal-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.loop {
+    max-width: 30%;
+}
+
+.operacoes {
+    max-width: 30%;
+}
+
+.tabuada {
+    max-width: 30%;
+}

@@ -7,36 +7,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script type="text/javascript" src="script.js"> </script>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Trispace&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 
     <title>Projeto javaScript</title>
 </head>
 
 <body>
-    <p>While, do-while, for e foreach</p>
-    <button onclick="exibirFrutasWhile()">While</button>
-    <p id="exibirFrutasWhile"></p>
+<div class="principal-container">
+    <div class="loop">
+        <h1>While, do-while, for e foreach</h1>
+        <button onclick="exibirFrutasWhile()">While</button>
+        <p id="exibirFrutasWhile"></p>
 
-    <button onclick="exibirFrutasDoWhile()">do-while</button>
-    <p id="exibirFrutasDoWhile"></p>
+        <button onclick="exibirFrutasDoWhile()">do-while</button>
+        <p id="exibirFrutasDoWhile"></p>
 
-    <button onclick="exibirFrutasFor()">For</button>
-    <p id="exibirFrutasFor"></p>
+        <button onclick="exibirFrutasFor()">For</button>
+        <p id="exibirFrutasFor"></p>
 
-    <button onclick="exibirFrutasForEach()">foreach</button>
-    <p id="exibirFrutasForEach"></p>
+        <button onclick="exibirFrutasForEach()">foreach</button>
+        <p id="exibirFrutasForEach"></p>
+    </div>
 
-    
-    <p>Tabuada</p>
-            <p>Tabuada do número:</p>
-            <input id="num" type="number" placeholder="Digite um número">
-            <button onclick="tabuada()">Verificar</button>
+    <div class="operacoes">
+        <h1>Operações matemáticas</h1>
+        <button onclick="quadrado()">Quadrado</button>
+        <p id="exibirQuadrado"></p>
 
-            <p>Resultado</p>
-            <div id='resposta'>
+        <button onclick="raizQuadrada()">Raiz Quadrada</button>
+        <p id="exibirRaizQuadrada"></p>
+
+        <button onclick="inteiro()">Inteiro</button>
+        <p id="exibirInteiro"></p>
+
+        <button onclick="arredondaParaCima ()">Arredonda para cima</button>
+        <p id="exibirArredondaParaCima"></p>
+
+        <button onclick="arredondaParaBaixo()">Arredonda para baixo</button>
+        <p id="exibirArredondaParaBaixo"></p>
+    </div>
+
+    <div class="tabuada">
+        <h1>Tabuada</h1>
+
+        <p>Tabuada do número:</p>
+
+        <input id="num" type="number" placeholder="Digite um número">
+        <button onclick="tabuada()">Verificar</button>
+        <p>Resultado</p>
+        <div id='resposta'>
+    </div>
+</div>
+
 </body>
 
 </html>
