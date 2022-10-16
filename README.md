@@ -9,7 +9,7 @@ Nele foi utilizado as linguagens HTML5 e JavaScript.<br>
 
 Ainda não foi implementado a responsividade neste projeto.<br>
 
-Link do projeto no gitpages: https://lephyns.github.io/projeto-javascript-ultima-school/
+Link do projeto no gitpages: 
 
 Abaixo tela do projeto:
 
