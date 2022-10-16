@@ -1,27 +1,119 @@
 * {
-    border: none;
     margin: 0;
     padding: 0;
+    border: none;
+    font-family: 'Asap', sans-serif;
+}
+
+body {
+    font-size: 18px;
+    width: 100vw;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 18px;
+    margin: 10px;
+}
+
+h2 {
+    font-size: 15px;
+    margin: 10px;
+}
+
+p {
+    margin: 10px;
+}
+
+input {
+    width: 80%;
+    border-radius: 5px;
+    margin: 3px;
+    height: 28px;
+    text-align: center;
+}
+
+button {
+    width: 80%;
+    border-radius: 5px;
+    margin: 3px;
+    height: 29px;
+    cursor: pointer;
+
+}
+
+button:hover {
+    transform: scale(1.03);
+    transition: all 0.3s;
+    background-color: #eeff00;
 }
 
 .principal-container {
-    width: 100vw;
-    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+}
+
+.container-funcoes {
+    grid-area: 2 / 2 / 8 / 5;
+    background-color: rgb(73, 73, 73);
+    text-align: center;
+    border-radius: 5px 0px 0px 5px;
     display: flex;
     flex-direction: column;
-    align-content: center;
     justify-content: center;
+}
+
+.container-resultado {
+    grid-area: 2 / 5 / 8 / 8;
+    text-align: center;
+    background-color: rgb(73, 73, 73);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.inner-container-a {
+    grid-area: 2 / 2 / 4 / 5;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(129, 177, 108);
+    margin: 5px 10px;
+    padding: 10px;
     align-items: center;
+    border-radius: 5px;
 }
 
-.loop {
-    max-width: 30%;
+.inner-container-b {
+    grid-area: 4 / 2 / 6 / 5;
+    display: flex;
+    flex-direction: column;
+    background-color: #b180df;
+    margin: 5px 10px;
+    padding: 10px;
+    align-items: center;
+    border-radius: 5px;
 }
 
-.operacoes {
-    max-width: 30%;
+.inner-container-c {
+    grid-area: 2 / 2 / 4 / 5;
+    display: flex;
+    flex-direction: column;
+    background-color: #4c78d8;
+    margin: 5px 10px;
+    padding: 10px;
+    align-items: center;
+    border-radius: 5px;
 }
 
-.tabuada {
-    max-width: 30%;
+.inner-container-d {
+    display: flex;
+    flex-direction: column;
+    background-color: #80b348;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
 }

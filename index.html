@@ -9,53 +9,47 @@
     <script type="text/javascript" src="script.js"> </script>
     <link rel="stylesheet" href="style.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap&display=swap" rel="stylesheet">
+
     <title>Projeto javaScript</title>
 </head>
 
 <body>
-<div class="principal-container">
-    <div class="loop">
-        <h1>While, do-while, for e foreach</h1>
-        <button onclick="exibirFrutasWhile()">While</button>
-        <p id="exibirFrutasWhile"></p>
+    <div class="principal-container">
+    <div class="container-funcoes">
 
-        <button onclick="exibirFrutasDoWhile()">do-while</button>
-        <p id="exibirFrutasDoWhile"></p>
+        <div class="inner-container-a">
+            <h1>While, do-while, for e foreach</h1>
+            <button onclick="exibirFrutasWhile()">While</button>
+            <button onclick="exibirFrutasDoWhile()">Do-while</button>
+            <button onclick="exibirFrutasFor()">For</button>
+            <button onclick="exibirFrutasForEach()">Foreach</button>
+        </div>
 
-        <button onclick="exibirFrutasFor()">For</button>
-        <p id="exibirFrutasFor"></p>
+        <div class="inner-container-b">
+            <h1>Operações matemáticas</h1>
+            <button onclick="quadrado()">Clique para exibir o quadrado no número 4</button>
+            <button onclick="raizQuadrada()">Clique para exibir a raiz Quadrada do número 9</button>
+            <button onclick="inteiro()">Clique para exibir o número inteiro (9/2 = 4,5)</button>
+            <button onclick="arredondaParaCima ()">Clique para exibir arredonda para cima (5/2 = 2,5)</button>
+            <button onclick="arredondaParaBaixo()">Clique para exibir arredonda para baixo (9/7 = 1,28)</button>
+        </div>
 
-        <button onclick="exibirFrutasForEach()">foreach</button>
-        <p id="exibirFrutasForEach"></p>
+        <div class="inner-container-c">
+            <h1>Tabuada</h1>
+            <h2>Clique no botão abaixo para exibir a tabuada do número 2</h2>
+            <button onclick="tabuada()">Exibir</button>
+        </div>
+
     </div>
 
-    <div class="operacoes">
-        <h1>Operações matemáticas</h1>
-        <button onclick="quadrado()">Quadrado</button>
-        <p id="exibirQuadrado"></p>
-
-        <button onclick="raizQuadrada()">Raiz Quadrada</button>
-        <p id="exibirRaizQuadrada"></p>
-
-        <button onclick="inteiro()">Inteiro</button>
-        <p id="exibirInteiro"></p>
-
-        <button onclick="arredondaParaCima ()">Arredonda para cima</button>
-        <p id="exibirArredondaParaCima"></p>
-
-        <button onclick="arredondaParaBaixo()">Arredonda para baixo</button>
-        <p id="exibirArredondaParaBaixo"></p>
+    <div class="container-resultado">
+        <div class="inner-container-d">
+        <h1>O resultado é: </h1>
+        <p id="exibeResultado"></p>
     </div>
-
-    <div class="tabuada">
-        <h1>Tabuada</h1>
-
-        <p>Tabuada do número:</p>
-
-        <input id="num" type="number" placeholder="Digite um número">
-        <button onclick="tabuada()">Verificar</button>
-        <p>Resultado</p>
-        <div id='resposta'>
     </div>
 </div>
 

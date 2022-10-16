@@ -11,6 +11,6 @@ Ainda não foi implementado a responsividade neste projeto.<br>
 
 Link do projeto no gitpages: **Projeto ainda não finalizado**
 
-Abaixo tela do projeto: **Projeto ainda não finalizado**
+Abaixo tela do projeto:
 
-<!-- ![]() -->
+![gif](./imagens/exibindo-projeto.gif "Exibindo projeto")
