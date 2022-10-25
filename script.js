@@ -13,44 +13,45 @@ const frutas = [
 
 function exibirFrutasWhile() {
 
-    let i = 0;
+    let i = 9;
     let text = "";
+
     while (frutas[i]) {
         text += frutas[i] + "<br>";
-        i++;
+        i--;
     }
 
     document.getElementById("exibeResultado").innerHTML = text;
-
 }
 
 function exibirFrutasDoWhile() {
 
     let text = "";
     let i = 0;
+
     do {
         text += frutas[i] + "<br>";
-        i++;
+        i ++;
     }
     while (i < 10);
     document.getElementById("exibeResultado").innerHTML = text;
 }
 
 function exibirFrutasFor() {
+    
 
-    let i = 0;
-    let text = "";
-    for (; frutas[i];) {
+    for (let i = 0, len = frutas.length, text = ""; i < len;  i++) {
         text += frutas[i] + "<br>";
-        i++;
-    }
 
-    document.getElementById("exibeResultado").innerHTML = text;
+        document.getElementById("exibeResultado").innerHTML = text;
+        i++
+    }
 }
 
 function exibirFrutasForEach() {
 
     let text = "";
+
     frutas.forEach(myFunction);
 
     document.getElementById("exibeResultado").innerHTML = text;
@@ -58,7 +59,38 @@ function exibirFrutasForEach() {
     function myFunction(item) {
         text += item + "<br>";
     }
+}
 
+const numeroReal = [2, 4, 5, 7, 9];
+
+function quadrado() {
+    document.getElementById("exibeResultado").innerHTML = Math.pow(numeroReal[1], 2);
+}
+
+function raizQuadrada() {
+
+    document.getElementById("exibeResultado").innerHTML = Math.sqrt(numeroReal[4]);
+
+}
+
+function inteiro() {
+
+    var num1 = numeroReal[4];
+    var num2 = numeroReal[0];
+    document.getElementById("exibeResultado").innerHTML = Math.trunc(num1 / num2);
+
+}
+
+function arredondaParaCima() {
+    var num1 = numeroReal[2];
+    var num2 = numeroReal[0];
+    document.getElementById("exibeResultado").innerHTML = Math.round(num1 / num2);
+}
+
+function arredondaParaBaixo() {
+    var num1 = numeroReal[4];
+    var num2 = numeroReal[3];
+    document.getElementById("exibeResultado").innerHTML = Math.round(num1 / num2);
 }
 
 function tabuada() {
@@ -70,37 +102,5 @@ function tabuada() {
         tabuada += num + " x " + count + " = " +
             num * count + "<br />";
 
-            resultado.innerHTML = tabuada;
-}
-
-const numeroReal = [2, 4, 5, 7, 9];
-
-function quadrado () {
-    document.getElementById("exibeResultado").innerHTML = Math.pow(numeroReal[1], 2);
-}
-
-function raizQuadrada () {
-
-document.getElementById("exibeResultado").innerHTML = Math.sqrt(numeroReal[4]);
-
-}
-
-function inteiro () {
-
-    var num1 = numeroReal[4];
-    var num2 = numeroReal[0];
-    document.getElementById("exibeResultado").innerHTML = Math.trunc(num1 / num2);
-
-}
-
-function arredondaParaCima () {
-    var num1 = numeroReal[2];
-    var num2 = numeroReal[0];
-    document.getElementById("exibeResultado").innerHTML = Math.round(num1 / num2);
-}
-
-function arredondaParaBaixo () {
-    var num1 = numeroReal[4];
-    var num2 = numeroReal[3];
-    document.getElementById("exibeResultado").innerHTML = Math.round(num1 / num2);
+    resultado.innerHTML = tabuada;
 }

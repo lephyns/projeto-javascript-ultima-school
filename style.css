@@ -21,20 +21,17 @@ h2 {
     margin: 10px;
 }
 
+h3 {
+    font-size: 13px;
+    margin: 10px;
+}
+
 p {
     margin: 10px;
 }
 
-input {
-    width: 80%;
-    border-radius: 5px;
-    margin: 3px;
-    height: 28px;
-    text-align: center;
-}
-
 .loop {
-    width: 25%;
+    width:50%;
     border-radius: 5px;
     margin: 3px;
     height: 29px;
@@ -50,7 +47,7 @@ input {
 }
 
 .tabuada {
-    width: 30%;
+    width: 50%;
     border-radius: 5px;
     margin: 3px;
     height: 29px;
@@ -73,7 +70,6 @@ button:hover {
 
 .container-funcoes {
     grid-area: 2 / 2 / 8 / 5;
-    background-color: rgb(73, 73, 73);
     text-align: center;
     border-radius: 5px 0px 0px 5px;
     display: flex;
@@ -84,7 +80,6 @@ button:hover {
 .container-resultado {
     grid-area: 2 / 5 / 8 / 8;
     text-align: center;
-    background-color: rgb(73, 73, 73);
     display: flex;
     flex-direction: column;
     justify-content: center;
